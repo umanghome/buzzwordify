@@ -137,6 +137,10 @@ function initPage () {
     var newPitch = buzzwordify(pitch);
     document.getElementById('buzzwordified').value = newPitch;
   });
+
+  document.forms[1].addEventListener('submit', function (e) {
+    e.preventDefault();
+  });
 }
 
 initPage();
